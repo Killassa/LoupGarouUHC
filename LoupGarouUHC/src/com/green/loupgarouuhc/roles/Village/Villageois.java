@@ -13,8 +13,8 @@ public class Villageois extends LgRole {
 	public void initValues() {
 		name = "Villageois";
 		
-		description = "Votre rôle est Villageois et vous devez donc gagner avec le village. "
-					+ "Vous ne disposez que de votre esprit d'enquêteur pour y parvenir."
+		description = "Votre rôle est Villageois et vous devez gagner avec le village. "
+					+ "Vous ne disposez que de votre esprit d'enquêteur pour y parvenir. "
 					+ "Bonne chance !";
 		
 		items = new ArrayList<ItemStack>();
