@@ -8,7 +8,7 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
-import com.green.loupgarouuhc.roles.BaseClass;
+import com.green.loupgarouuhc.roles.LgRole;
 import com.green.loupgarouuhc.menu.IconMenu.InventoryClosedEvent;
 import com.green.loupgarouuhc.menu.IconMenu.InventoryClosedEventHandler;
 import com.green.loupgarouuhc.menu.IconMenu.OptionClickEvent;
@@ -22,7 +22,7 @@ public class RolesMenu {
 	public IconMenu menu;
 	public HashMap<String, Boolean> isRoleEnabled = new HashMap<String, Boolean>();
 	
-	public RolesMenu(String name, ArrayList<BaseClass> classes, Plugin plugin) {
+	public RolesMenu(String name, ArrayList<LgRole> roles, Plugin plugin) {
 		OptionClickEventHandler handler = new OptionClickEventHandler() {
 			@Override
 			public void onOptionClick(OptionClickEvent event) {
@@ -48,17 +48,17 @@ public class RolesMenu {
 			}
 		};
 		
-		int size = ((((int)(classes.size() / 9.0)) + 1) * 9);
+		int size = ((((int)(roles.size() / 9.0)) + 1) * 9);
 		
 		menu = new IconMenu(name, size, handler, closeHandler, plugin);
 		
 		int i = 0;
-		for (BaseClass baseClass : classes) {
+		for (LgRole role : roles) {
 			i++;
 			ItemStack stack = new ItemStack(Material.WOOL);
 			stack.setDurability(DISABLED);
-			isRoleEnabled.put(baseClass.className, false);
-			menu.setOption(i, stack, baseClass.className, "Role");
+			isRoleEnabled.put(role.getName(), false);
+			menu.setOption(i, stack, role.getName(), "Role");
 		}
 	}
 }

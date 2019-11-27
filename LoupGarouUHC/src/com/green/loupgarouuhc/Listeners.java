@@ -12,6 +12,6 @@ public class Listeners implements Listener {
 	
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent event) {
-		event.getPlayer().sendMessage("AAAAAAAAAAAAAAAA");
+		event.getPlayer().sendMessage("Bienvenue sur Loup-Garou UHC");
 	}
 }

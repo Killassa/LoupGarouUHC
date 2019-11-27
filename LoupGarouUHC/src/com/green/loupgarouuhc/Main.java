@@ -9,7 +9,8 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.green.loupgarouuhc.menu.RolesMenu;
-import com.green.loupgarouuhc.roles.BaseClass;
+import com.green.loupgarouuhc.roles.LgRole;
+import com.green.loupgarouuhc.roles.Village.Villageois;
 
 public class Main extends JavaPlugin {
 	RolesMenu menu;
@@ -19,28 +20,13 @@ public class Main extends JavaPlugin {
 		super.onEnable();
 		getLogger().info("Loup garou UHC has been enabled ...");
 		
-		ArrayList<BaseClass> classes = new ArrayList<BaseClass>();
-		classes.add(new BaseClass("test1"));
-		classes.add(new BaseClass("test2"));
-		classes.add(new BaseClass("test3"));
-		classes.add(new BaseClass("test4"));
+		ArrayList<LgRole> classes = new ArrayList<LgRole>();
+		classes.add(new Villageois());
+		classes.add(new Villageois());
+		classes.add(new Villageois());
+		classes.add(new Villageois());
 		
 		menu = new RolesMenu("Test", classes, this);
-		
-		/* IconMenu 
-		menu = new IconMenu("My Fancy Menu", 9, new IconMenu.OptionClickEventHandler() {
-            @Override
-            public void onOptionClick(IconMenu.OptionClickEvent event) {
-                event.getPlayer().sendMessage("You have chosen " + menu.inventory.getItem(event.getPosition()).getItemMeta().getDisplayName());
-                
-                menu.setOption(3, new ItemStack(Material.GOLDEN_APPLE), "MIAM", "AAAAAAAAAAA");
-                
-                event.setAction(IconMenu.OptionClickEvent.ActionClick.Nothing);
-            }
-        }, this)
-        .setOption(3, new ItemStack(Material.APPLE, 1), "Food", "The food is delicious")
-        .setOption(4, new ItemStack(Material.IRON_SWORD, 1), "Weapon", "Weapons are for awesome people")
-        .setOption(5, new ItemStack(Material.EMERALD, 1), "Money", "Money brings happiness");*/
 		
 		/* PluginManager */
 		PluginManager pm = getServer().getPluginManager();
@@ -63,7 +49,7 @@ public class Main extends JavaPlugin {
 			String cmd = command.getName().toLowerCase();
 			player.sendMessage(label);
 			switch (cmd) {
-				case "test":
+				case "config":
 					menu.menu.open(player);
 					
 					player.sendMessage(menu.isRoleEnabled.toString());
