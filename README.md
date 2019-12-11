@@ -59,13 +59,13 @@
 - Montreur d'ours : A chaque début de journée pour chaque loup qui se trouve dans un rayon de 50 blocs, un grognement est affiché dans le chat général.
 - Sœurs : Résistance 1 lors qu'elles sont à moins de 10 blocs l'une de l'autre. Voit le rôle du joueur qui a tué l'autre sœur.
 - Renard : Speed 1 en permanence. Il peut flairer 3x dans la game un joueur qui se trouve à moins de 10 blocs de lui, afin de savoir si celui-ci est un loup ou un innocent. (Commande : /lg snif PlayerName) Il ne voit en tant que loup que les rôles qui ont "loup" dans leur nom.
-- Voyante : Obtient 4 obsidiennes et 2 bibliothèque. Elle dispose, chaque 40min de jeu après l'attribution des rôles, de 2min pour connaître le rôle d'une personne de son choix. (Commande : /lg voir PlayerName)
+- Voyante : Obtient 4 obsidiennes et 2 bibliothèque. Elle dispose, chaque 30min de jeu après l'attribution des rôles, de 2min pour connaître le rôle d'une personne de son choix. (Commande : /lg voir PlayerName)
 - Citoyen : Il peut visualiser les votes des joueurs à 2 reprises dans la partie. Il reçoit un message dans son chat juste avant l'annonce du résultat du vote et s'il clic sur "Voir", il peut voir qui à voter pour qui.
 
 ### Les loups
 
 - Loups-garous : Force 60% la nuit.
-- Infect père des loups : Force 60% la nuit. Speed 1 pendant 2 minutes lorsqu'il tue un joueur. Il peut choisir de ressusciter un joueur mort par les loups-garous celui-ci rejoint devient un loup-garou normal tout en conservant ses anciens pouvoirs. (Il ne peut pas se ressusciter lui-même)
+- Infect père des loups : Force 60% la nuit. Speed 1 pendant 2 minutes lorsqu'il tue un joueur. Il peut choisir de ressusciter un joueur mort par les loups-garous celui-ci devient un loup-garou normal tout en conservant ses anciens pouvoirs. (Commande : /lg infect PlayerName)
 - Vilain petit loup : Speed 1 la nuit.
 
 ### Spéciaux
