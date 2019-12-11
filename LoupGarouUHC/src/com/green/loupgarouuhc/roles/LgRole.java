@@ -10,7 +10,8 @@ public abstract class LgRole {
 	protected ArrayList<ItemStack> items;
 	protected ArrayList<PotionEffect> effects;
 	protected VictoryCondition victoryCondition;
-	protected double strengthDamageRatio = 0;
+	protected double strengthDamageRatio = 0.6;
+	protected double life = 20;
 	
 	public LgRole() {
 		initValues();
@@ -36,7 +37,7 @@ public abstract class LgRole {
 		return victoryCondition;
 	}
 	
-	public double strengthDamageRatio() {
+	public double getStrengthDamageRatio() {
 		return strengthDamageRatio;
 	}
 	

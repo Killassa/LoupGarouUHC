@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 import com.green.loupgarouuhc.roles.LgRole;
 
@@ -23,9 +22,6 @@ public class Salvateur extends LgRole {
 		
 		items = new ArrayList<ItemStack>();
 		effects = new ArrayList<PotionEffect>();
-		
-		//Resistance
-		effects.add(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 99999, 1));
 		
 		victoryCondition = VictoryCondition.Village;
 	}

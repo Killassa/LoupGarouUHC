@@ -8,14 +8,18 @@ import org.bukkit.potion.PotionEffectType;
 
 import com.green.loupgarouuhc.roles.LgRole;
 
-public class LoupGarou extends LgRole {
+public class InfectPereDesLoups extends LgRole {
 
 	@Override
 	public void initValues() {
-		name = "Loup-Garou";
+		name = "Infect père des loups";
 		
-		description = "Votre rôle est Loup-Garou et vous devez gagner avec les Loups-Garous. "
-					+ "Vous disposez de l'effet Force la nuit. "
+		description = "Votre rôle est Infect père des loups et vous devez gagner avec les Loups-Garous. "
+					+ "Vous disposez de l'effet Force la nuit ainsi que Rapidité pendant 2 minutes lorsque vous "
+					+ "tuez un joueur. "
+					+ "Lorsque les loups tuent un joueur, vous avez la possibilité de le ressusciter, celui-ci "
+					+ "devient donc un loup-garou tout en conservant ses anciens pouvoirs. "
+					+ "(Commande: /lg infect PlayerName) "
 					+ "Bonne chance !";
 		
 		items = new ArrayList<ItemStack>();
@@ -26,4 +30,5 @@ public class LoupGarou extends LgRole {
 		
 		victoryCondition = VictoryCondition.Werewolf;
 	}
+
 }

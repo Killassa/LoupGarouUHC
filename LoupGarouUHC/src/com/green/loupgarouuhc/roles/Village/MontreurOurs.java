@@ -7,18 +7,22 @@ import org.bukkit.potion.PotionEffect;
 
 import com.green.loupgarouuhc.roles.LgRole;
 
-public class Villageois extends LgRole {
+public class MontreurOurs extends LgRole {
 
 	@Override
 	public void initValues() {
-		name = "Villageois";
+		name = "Montreur d'ours";
 		
-		description = "Votre rôle est Villageois et vous devez gagner avec le village. "
-					+ "Vous ne disposez que de votre esprit d'enquêteur et votre chance pour y parvenir. "
+		description = "Votre rôle est Montreur d'ours et vous devez gagner avec le village. "
+					+ "Vous disposez pour cela d'un pouvoir qui s'active à chaque début de journée. "
+					+ "Ce pouvoir affiche un grognement dans le chat pour chaque loup se situant dans un "
+					+ "rayon de 50 blocs autour de vous. "
 					+ "Bonne chance !";
 		
 		items = new ArrayList<ItemStack>();
 		effects = new ArrayList<PotionEffect>();
 		victoryCondition = VictoryCondition.Village;
+
 	}
+
 }

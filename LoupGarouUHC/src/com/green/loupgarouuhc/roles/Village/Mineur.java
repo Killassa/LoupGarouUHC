@@ -9,7 +9,6 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import com.green.loupgarouuhc.roles.LgRole;
-import com.green.loupgarouuhc.roles.LgRole.VictoryCondition;
 
 public class Mineur extends LgRole {
 
@@ -18,7 +17,7 @@ public class Mineur extends LgRole {
 		name = "Mineur";
 		
 		description = "Votre rôle est Mineur et vous devez gagner avec le village. "
-					+ "Vous disposez des effets scélérité ainsi que d'une pioche en diamant efficacité 2. "
+					+ "Vous disposez des effets Scélérité ainsi que d'une pioche en diamant Efficacité 2. "
 					+ "Bonne chance !";
 		
 		items = new ArrayList<ItemStack>();

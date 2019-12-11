@@ -16,7 +16,7 @@ public class Chasseur extends LgRole {
 		name = "Chasseur";
 		
 		description = "Votre rôle est Chasseur et vous devez gagner avec le village. "
-					+ "Vous disposez pour cela d'un livre Power 4 ainsi que de 128 flèches. "
+					+ "Vous disposez d'un livre Puissance 4 ainsi que de 128 flèches. "
 					+ "A votre mort vous avez une minute pour choisir un joueur et lui enlever la moitié de sa vie. "
 					+ "(Commande : /lg pan PlayerName)"
 					+ "Bonne chance !";

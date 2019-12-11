@@ -7,7 +7,6 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import com.green.loupgarouuhc.roles.LgRole;
-import com.green.loupgarouuhc.roles.LgRole.VictoryCondition;
 
 public class Ancien extends LgRole {
 

@@ -8,22 +8,23 @@ import org.bukkit.potion.PotionEffectType;
 
 import com.green.loupgarouuhc.roles.LgRole;
 
-public class LoupGarou extends LgRole {
+public class VilainPetitLoup extends LgRole {
 
 	@Override
 	public void initValues() {
-		name = "Loup-Garou";
+		name = "Vilain petit loup";
 		
-		description = "Votre rôle est Loup-Garou et vous devez gagner avec les Loups-Garous. "
-					+ "Vous disposez de l'effet Force la nuit. "
+		description = "Votre rôle est Vilain petit loup et vous devez gagner avec les Loups-Garous. "
+					+ "Vous disposez de l'effet Rapidité la nuit. "
 					+ "Bonne chance !";
 		
 		items = new ArrayList<ItemStack>();
 		effects = new ArrayList<PotionEffect>();
 		
-		//Strength
-		effects.add(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 99999, 1));
+		//Speed
+		effects.add(new PotionEffect(PotionEffectType.SPEED, 99999, 1));
 		
 		victoryCondition = VictoryCondition.Werewolf;
 	}
+
 }
