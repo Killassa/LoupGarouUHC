@@ -1,6 +1,8 @@
 package com.green.loupgarouuhc.roles;
 
 import java.util.ArrayList;
+
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 
@@ -11,12 +13,16 @@ public abstract class LgRole {
 	protected ArrayList<PotionEffect> effects;
 	protected VictoryCondition victoryCondition;
 	protected double strengthDamageRatio = 0.6;
-	protected double life = 20;
+	protected int life = 20;
+	protected boolean isCouple = false;
+	protected Player player = null;
+	protected boolean isAlive = true;
 	
 	public LgRole() {
 		initValues();
 	}
 	
+	//Get
 	public String getName() {
 		return name;
 	}
@@ -41,8 +47,38 @@ public abstract class LgRole {
 		return strengthDamageRatio;
 	}
 	
+	public int getLife() {
+		return life;
+	}
+	
+	public boolean getIsCouple() {
+		return isCouple;
+	}
+	
+	public Player getPlayer() {
+		return player;
+	}
+	
+	public boolean getIsAlive() {
+		return isAlive;
+	}
+	
+	//Set
 	public void setVictoryCondition(VictoryCondition victoryCondition) {
 		this.victoryCondition = victoryCondition;
+	}
+	
+	public void setIsCouple(boolean isCouple) {
+		this.isCouple = isCouple;
+		this.victoryCondition = VictoryCondition.Couple;
+	}
+	
+	public void setPlayer(Player player) {
+		this.player = player;
+	}
+	
+	public void setIsAlive(boolean isAlive) {
+		this.isAlive = isAlive;
 	}
 	
 	public abstract void initValues();
