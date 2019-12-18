@@ -4,11 +4,12 @@
 
 - Tout type de minage
 - Pas de cheat
-- Ne pas voter pour la personne qui vient d'être voté, il est cependant possible de voter plusieurs fois pour la même personne si celle-ci n'a pas pris les votes lors du précédant vote
+- Streamhack non toléré
+- Ne pas voter pour la personne qui vient d'être votée, il est cependant possible de voter plusieurs fois pour la même personne si celle-ci n'a pas pris les votes lors du précédant vote
 - Plugin Mumble nécessaire
 - Ne pas volontairement révéler son rôle (Le dire ou volontairement montrer une potion sans l'utiliser par exemple)
 - Si la partie s'écourte et que vous ne vous êtes toujours pas rapprocher du centre vous serez téléporté
-- Fire Aspect, Flame, seau de lave et briquet ne sont pas autorisés
+- Fire Aspect, Flame, seau de lave, briquet et canne à pêche ne sont pas autorisés
 - Ne pas communiquer par message sur une autre application
 - Ne pas essayer d'exploiter des éléments non spécifiés qui seraient de toute évidence non autorisé
 - Nous nous réservons le droit de Blacklist les personnes ne respectant pas les règles ou les personnes qui nuiraient au plaisir des autres
@@ -18,11 +19,12 @@
 - Map de taille configurable(1000x1000 / 2000x2000 / 3000x3000 / 5000x5000)
 - Configuration de temps pour la réduction de la bordure jusqu'en 1000x1000
 - Désactivation des coordonnées sur le F3, une distance par rapport au centre sera données aux joueurs en fonction de leur position
+- Ajout d'une RoofedForest pour le centre de la map
 - Cutclean
 - Nightvision permanent pour tous les joueurs
 - Annonce des différents rôles à 20 minutes, ils sont répartis de manière aléatoire
 - PVP actif à partir de l'annonce des rôles
-- A partir de l'annonce des rôles le cylce jour/nuit ne feront plus que 5 minutes à la place des 10 par défaut
+- A partir de l'annonce des rôles le cylce jour/nuit ne fera plus que 5 minutes à la place des 10 par défaut
 - Limite de minage du diamant à 17 par joueur
 - Limite d'enchantement sur le diamant à protection 3, sauf exception de livre avec un id spécial(associé à un rôle)
 - Limite d'enchantement sur les épées à Sharpness 4
@@ -34,6 +36,7 @@
 - Spawn des joueurs de manière aléatoire et séparé les uns des autres sur la map
 - Pas de chat disponible pour la communication entre les joueurs
 - Utilisation du plugin Mumble
+- Rod desactivée
 - Fire Aspect, Flame, seau de lave et briquet désactivé
 - Possibilités d'activer ou désactiver des rôles
 - 15 sec de délais avant la mort d'un joueur pour permettre les résurrections
