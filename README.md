@@ -31,6 +31,7 @@
 - Limite à 2 pièces d'armure en diamant par joueur
 - Chaque 20 minutes après 60 minutes de jeu, les joueurs ont la possibilités de voter (Commande : /lg vote PlayerName) Le joueur comptabilisant le plus de votes perdra donc la motier de sa vie pendant 10 minutes
 - Gain de 2 coeurs d'absorption lorsque l'on tue un joueur
+- Un joueur drop une pomme d'or supplémentaire lorsqu'il meurt
 - A la mort d'un joueur, son nom et son rôles sont données à tous les joueurs mais le nom du tueur n'est pas indiqué
 - Nether désactivé
 - Spawn des joueurs de manière aléatoire et séparé les uns des autres sur la map
@@ -45,8 +46,9 @@
 - Répartition : (Suivre l'ordre des règles pour l'attribution)
 - Attribution des rôles spéciaux avant attribution des rôles villageois / loups
 - 2x moins de loup que de villageois
-- attribution des rôles particuliers de chaque camps
-- attribution des rôles LG et SV
+- Attribution des rôles particuliers de chaque camps
+- Attribution des rôles LG et SV
+- Les loups ont accès à une commande leur permettant de consulter la liste des loups 
 
 ## Les Rôles
 
@@ -96,11 +98,11 @@
 
 - Loup amnésique :
   - Gagne avec le village, s'il se souvient gagne avec les loups.
-  - SV à l'annonce des rôles, puis si un membre des loups le tape, il retrouve la mémoire après 2 minutes et devient un loup-garou normal.
+  - SV à l'annonce des rôles, puis si un membre des loups le tape, il retrouve la mémoire après 2 minutes et devient un loup-garou normal et il est ajouté à la liste des loups avec possibilité de la consulté. 
 
 - Enfant sauvage :
   - Gagne avec le village, si son maître meurt gagne avec les loups.
-  - Il désigne un maître au début de la partie (Commande : /lg master PlayerName), si son maître meurt il devient un loup-garou normal.
+  - Il désigne un maître au début de la partie (Commande : /lg master PlayerName), si son maître meurt il devient un loup-garou normal et il est ajouté à la liste des loups avec possibilité de la consulté.
 
 ### Autres
 
