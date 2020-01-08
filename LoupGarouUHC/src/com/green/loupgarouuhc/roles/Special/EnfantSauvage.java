@@ -35,7 +35,7 @@ public class EnfantSauvage extends LgRole {
 	public boolean masterAlive(Player deadPlayer) {
 		if(deadPlayer == master) {
 			description = "Votre maître est mort ! "
-						+ "Vous devenez donc un Loup-Garou et vous devez gagner avec ées Loups-Garous.";
+						+ "Vous devenez donc un Loup-Garou et vous devez gagner avec les Loups-Garous.";
 			
 			//Strength
 			effects.add(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 99999, 1));

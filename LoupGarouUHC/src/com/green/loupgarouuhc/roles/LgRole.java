@@ -9,16 +9,20 @@ import org.bukkit.potion.PotionEffect;
 public abstract class LgRole {
 	protected String name;
 	protected String description;
+	protected String moreInfo;
 	protected ArrayList<ItemStack> items;
 	protected ArrayList<PotionEffect> effects;
 	protected VictoryCondition victoryCondition;
-	protected double strengthDamageRatio = 0.6;
-	protected int life = 20;
-	protected boolean isCouple = false;
-	protected Player player = null;
-	protected boolean isAlive = true;
+	protected double strengthDamageRatio;
+	protected int life;
+	protected boolean isCouple;
+	protected Player player;
+	protected boolean isAlive;
+	protected Player killer;
+	protected Class<? extends LgRole> currentRole;
 	
 	public LgRole() {
+		defaultValues();
 		initValues();
 	}
 	
@@ -29,6 +33,10 @@ public abstract class LgRole {
 	
 	public String getDescription() {
 		return description;
+	}
+	
+	public String getMoreInfo() {
+		return moreInfo;
 	}
 	
 	public ArrayList<ItemStack> getItems() {
@@ -63,6 +71,14 @@ public abstract class LgRole {
 		return isAlive;
 	}
 	
+	public Player getKiller() {
+		return killer;
+	}
+	
+	public Class<? extends LgRole> getCurrentRole() {
+		return currentRole;
+	}
+	
 	//Set
 	public void setVictoryCondition(VictoryCondition victoryCondition) {
 		this.victoryCondition = victoryCondition;
@@ -81,7 +97,27 @@ public abstract class LgRole {
 		this.isAlive = isAlive;
 	}
 	
+	public void setKiller(Player killer) {
+		this.killer = killer;
+	}
+	
+	public void setCurrentRole(Class<? extends LgRole> currentRole) {
+		this.currentRole = currentRole;
+	}
+	
+	//Function
 	public abstract void initValues();
+	
+	private void defaultValues() {
+		moreInfo = "";
+		strengthDamageRatio = 0.6;
+		life = 20;
+		isCouple = false;
+		player = null;
+		isAlive = true;
+		killer = null;
+		currentRole = this.getClass();
+	}
 	
 	public enum VictoryCondition {
 		Solo,

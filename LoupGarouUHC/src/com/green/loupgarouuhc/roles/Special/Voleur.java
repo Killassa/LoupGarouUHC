@@ -31,4 +31,23 @@ public class Voleur extends LgRole {
 		victoryCondition = VictoryCondition.Solo;
 	}
 
+	public void updateRole(LgRole killedPlayer) {
+		name = killedPlayer.getName();
+		
+		description = "Vous avez volé le rôle " + killedPlayer.getName() + " ! "
+					+ killedPlayer.getDescription();
+		
+		items = new ArrayList<ItemStack>();
+		effects = killedPlayer.getEffects();
+		
+		victoryCondition = killedPlayer.getVictoryCondition();
+		strengthDamageRatio = killedPlayer.getStrengthDamageRatio();
+		life = killedPlayer.getLife();
+		isCouple = killedPlayer.getIsCouple();
+		currentRole = killedPlayer.getClass();
+		
+		if(isCouple == true) {
+			moreInfo = "Vous avez également volé le couple";
+		}
+	}
 }

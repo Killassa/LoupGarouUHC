@@ -7,6 +7,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import com.green.loupgarouuhc.roles.LgRole;
+import com.green.loupgarouuhc.roles.Village.Villageois;
 
 public class LoupAmnesique extends LgRole {
 
@@ -21,6 +22,8 @@ public class LoupAmnesique extends LgRole {
 		items = new ArrayList<ItemStack>();
 		effects = new ArrayList<PotionEffect>();
 		victoryCondition = VictoryCondition.Village;
+		
+		currentRole = Villageois.class;
 	}
 	
 	public void updateRole() {
@@ -38,6 +41,8 @@ public class LoupAmnesique extends LgRole {
 		effects.add(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 99999, 1));
 		
 		victoryCondition = VictoryCondition.Werewolf;
+		
+		currentRole = this.getClass();
 	}
 
 }
